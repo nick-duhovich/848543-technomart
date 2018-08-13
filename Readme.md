@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Николай Духович](https://up.htmlacademy.ru/htmlcss/22/user/848543).
-* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
+* Студент: [Николай Духович] (https://up.htmlacademy.ru/htmlcss/22/user/848543).
+* Наставник: [Дмитрий Половков] (https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
