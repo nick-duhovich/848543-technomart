@@ -73,20 +73,22 @@
   <section class="filters">
     <h2 class="visually-hidden">Фильтр:</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-      <div class="filter-range"><!-- ползунок -->
-        <div class="filter-range-title">Цена:</div>
-        <div class="price-controls">
-          <label class="min-price"><input type="text" name="min-price" value="0"></label>
-          <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+      <fieldset>
+        <legend>Цена:</legend>
+        <div class="filter-range"><!-- ползунок -->
+          <div class="price-controls">
+            <label class="min-price"><input type="text" name="min-price" value="0"></label>
+            <label class="max-price"><input type="text" name="max-price" value="30000"></label>
+          </div>
         </div>
-      </div>
-      <div class="range-controls"><!-- значение цены (диапазон min max) -->
-        <div class="scale">
-          <div class="bar"></div>
+        <div class="range-controls"><!-- значение цены (диапазон min max) -->
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
         </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
+      </fieldset>
       <fieldset>
         <legend>Производители:</legend>
         <ul>
@@ -357,7 +359,7 @@
     <a href="#" class="button-open">Оформить заказ</a>
     <a href="#" class="button-open">Продолжить покупки</a>
   </div>
-  <span class="modal-close">X</span>
+  <button class="modal-close">X</button>
 </section>
 </body>
 </html>
