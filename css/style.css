@@ -97,7 +97,8 @@ a {
   width: 270px;
   font-size: 17px;
   border: none;
-  background-color: inherit;
+  background-color: #293449;
+  /*background-color: inherit;*/
   outline: none;
 }
 
@@ -151,6 +152,7 @@ a {
 
 .book-mark {
   width: 106px;
+  height: 30px;
   padding-left: 44px;
   background-color: #293449;
   background-image: url("../img/icon-bookmark-1.svg");
@@ -161,6 +163,7 @@ a {
 
 .cart {
   width: 100px;
+  height: 30px;
   padding-left: 50px;
   background-color: #293449;
   background-image: url("../img/icon-cart-1.svg");
@@ -1349,9 +1352,12 @@ a {
 
 .footer-contacts {
   margin: 0;
-  margin-right: 50px;
+  margin-right: 48px;
   margin-bottom: 49px;
   padding-left: 3px;
+  /*font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;*/
   color: #f1f5f7;
 }
 
@@ -1824,6 +1830,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 
 /*.price-controls {
@@ -1834,6 +1841,13 @@ a {
   display: inline-block;
   width: 50%;
 }*/
+
+.min-price:before {
+  content: "—";
+  position: absolute;
+  top: 6px;
+  right: 104px;
+}
 
 .price-controls input {
   width: 75px;
@@ -2179,6 +2193,12 @@ a {
   margin-bottom: 53px;
 }
 
+.container-popular,
+.container-brand {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .header-article {
   height: 89px;
   display: -webkit-box;
@@ -2242,9 +2262,9 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 565px;
+  width: 566px;
   margin: 0;
-  padding-left: 41px;
+  padding-left: 43px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2325,6 +2345,11 @@ a {
 }
 
 .container-info-prod {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.container-bread {
   width: 940px;
   margin: 0 auto;
 }
