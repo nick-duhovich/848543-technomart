@@ -145,6 +145,26 @@ a {
   width: 450px;
 }
 
+.buy-navigation li a {
+  width: 150px;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.buy-navigation li:nth-child(2) a {
+  padding-left: 50px;
+}
+
+.buy-navigation li:last-child a {
+  padding-left: 21px;
+  background-color: #63a63e;
+}
+
 .book-mark {
   background-image: url('../img/icon-bookmark-1.svg');
   background-repeat: no-repeat;
@@ -161,45 +181,12 @@ a {
   position: relative;
 }
 
-.buy-navigation li:hover {
-  background-color: #212a3a;
-}
-
 .book-mark:hover {
   background-image: url('../img/icon-bookmark.svg');
 }
 
 .cart:hover {
   background-image: url('../img/icon-cart.svg');
-}
-
-.buy-navigation li:last-child:hover {
-  background-color: #5fbb2d;
-}
-
-.buy-navigation li:focus,
-.buy-navigation li:active {
-  opacity: 0.6;
-}
-
-.buy-navigation li a {
-  width: 150px;
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 44px;
-  color: #ffffff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.buy-navigation li:nth-child(2) a {
-  padding-left: 49px;
-}
-
-.buy-navigation li:last-child a {
-  padding-left: 20px;
-  background-color: #63a63e;
 }
 
 .cart-full:after {
@@ -211,7 +198,20 @@ a {
   top: 0;
   background: #ee3643;
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.8;
+}
+
+.buy-navigation a:hover {
+  background-color: #212a3a;
+}
+
+.buy-navigation .checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.buy-navigation a:focus,
+.buy-navigation a:active {
+  opacity: 0.6;
 }
 
 .main-info {
@@ -526,12 +526,12 @@ a {
   color: #ffffff;
 }
 
-.site-navigation li:hover {
+.site-navigation a:hover {
   background-color: #293449;
 }
 
-.site-navigation li:focus,
-.site-navigation li:active {
+.site-navigation a:focus,
+.site-navigation a:active {
   opacity: 0.5;
   background-color: #1d2739;
 }
@@ -1121,13 +1121,13 @@ a {
   vertical-align: middle;
 }
 
-.brand-item:hover {
+.brand-item a:hover {
   -webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
   box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
-.brand-item:focus,
-.brand-item:active {
+.brand-item a:focus,
+.brand-item a:active {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
   opacity: 0.5;
