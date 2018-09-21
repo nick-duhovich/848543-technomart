@@ -134,18 +134,18 @@ a {
 }
 
 .buy-navigation {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 450px;
 }
 
 .book-mark {
-  background-color: #293449;
   background-image: url('../img/icon-bookmark-1.svg');
   background-repeat: no-repeat;
   background-position-x: 17px;
@@ -153,7 +153,6 @@ a {
 }
 
 .cart {
-  background-color: #293449;
   background-image: url('../img/icon-cart-1.svg');
   background-repeat: no-repeat;
   background-position-x: 18px;
@@ -164,10 +163,6 @@ a {
 
 .buy-navigation li:hover {
   background-color: #212a3a;
-}
-
-.buy-navigation li:last-child {
-  background-color: #63a63e;
 }
 
 .book-mark:hover {
@@ -188,39 +183,23 @@ a {
 }
 
 .buy-navigation li a {
-  display: inline-block;
-  width: 100%;
+  width: 150px;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 44px;
   color: #ffffff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 12px;
-  padding-right: 27px;
-  padding-bottom: 12px;
-  padding-left: 45px;
 }
 
 .buy-navigation li:nth-child(2) a {
-  display: inline-block;
-  width: 100%;
-  color: #ffffff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-top: 12px;
-  padding-right: 30px;
-  padding-bottom: 12px;
   padding-left: 49px;
 }
 
-.buy-navigation li:nth-child(3) a {
-  display: inline-block;
-  width: 100%;
-  color: #ffffff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-top: 12px;
-  padding-right: 22px;
-  padding-bottom: 12px;
+.buy-navigation li:last-child a {
   padding-left: 20px;
+  background-color: #63a63e;
 }
 
 .cart-full:after {
@@ -524,7 +503,6 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 55px;
   margin: 0;
   padding: 0 12px;
 }
@@ -2268,7 +2246,6 @@ textarea::placeholder {
   display: -ms-flexbox;
   display: flex;
   width: 940px;
-  height: 42px;
   margin: 0px auto;
   padding: 0 10px;
 }
